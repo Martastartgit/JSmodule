@@ -99,8 +99,7 @@
 
 // - отримати весь список класів елемента з id = rules і вивести їх в console.log
 
-// let element = document.getElementById('rules').getElementsByClassName('fc bp');
-// console.log(element);
+// console.log(rules.classList);
 
 // - отримати всі елементи з класом fc_rules
 

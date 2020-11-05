@@ -46,8 +46,9 @@
 // let element = document.getElementsByTagName('a');
 // let xxx ='';
 // for (const i of element) {
-//     i.classList.add(`element_${xxx}`);
 //     xxx = i.textContent;
+//     i.classList.add(`element_${xxx}`);
+    
 // }
 
 
