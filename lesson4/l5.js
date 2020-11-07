@@ -399,3 +399,49 @@
 // };
 
 // createElement(rules);
+
+// Вирівняти багаторівневий масив в однорівневий
+// [1, 3, ['Hello, 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello, 'Wordd', 9, 6, 1, 'oops', 9]
+
+// let array = [1, 3, ['Hello, Wordd', [9,6,1]], ['oops'], 9];
+
+// function flatten (arr) {
+//     let flattenArray = [];
+//     for (const item of arr) {
+//         (Array.isArray(item))  
+//         ? flattenArray = flattenArray.concat(flatten(item)) 
+//         : flattenArray.push(item);
+//     }    
+
+//     return flattenArray;
+
+// };
+
+// console.log(array);
+
+// const array1 = flatten(array);
+// console.log(array1);
+
+
+// реалізувати глибоке копіювання обєкту за допомогою рекурсій
+
+// let array = [2,1, 3, ['Hello, Wordd'], [9,6,1], ['oops'], 9];
+
+// function deepClone (arr) {
+//     let arr1 = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (Array.isArray(arr[i])) {
+//            arr1[i] = deepClone(arr[i]); 
+//         } 
+//         else  {
+//             arr1[i] = arr[i];    
+//         }
+        
+//     }
+//     console.log(arr1);
+
+//     return arr1;
+
+// };
+
+// deepClone(array);
