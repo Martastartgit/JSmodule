@@ -302,17 +302,17 @@
 
 // function addElement(array, idTag) {
 //     let div = document.getElementById(idTag);
+//     let block = document.createElement('div');
     
 //     for (let i = 0; i < array.length; i++) {
 //         const element = array[i];
-//         const block = document.createElement('div');
 //         const h3 = document.createElement('h3');
 //         const p = document.createElement('p');
 //         h3.innerHTML = `name : ${element.name}`;
-//         p.innerHTML = `age : ${element.age}, status : ${element.status}`
+//         p.innerHTML = `age : ${element.age}, status : ${element.status}`;
 //         block.appendChild(h3);
 //         block.appendChild(p);
-//         
+        
 //     }
 
 //     div.appendChild(block);
@@ -390,11 +390,11 @@
 
 //         h2.innerHTML = `title : ${element.title}`;
 //         p.innerHTML = `body : ${element.body}`;
-//         block.appendchild(h2);
-//         block.appendchild(p); 
+//         block.appendChild(h2);
+//         block.appendChild(p); 
         
 //     }
-//     document.body.appendchild(block);
+//     document.body.appendChild(block);
 
 // };
 
@@ -445,3 +445,95 @@
 // };
 
 // deepClone(array);
+
+
+// Створити обєкт автомобіля з полями:
+// Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
+// Власник автомобіля теж має бути обєкт, у якого є поля
+// Імя, вік, стаж водіння.
+// Створити не менше 7 та не більше 20 машинок.
+// Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10 % (переприсвоєння змінної потужності).
+// На відремонтовані автомобілі найняти нових водіїв(переприсвоїти змінну водій).
+// Для початку вкладіть всі наші створені автомобілі в масив cars.
+// Далі необхідно рати кожну другу машинку(цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10 % та ціну на 5 %
+//     Після того зробити перевірку досвіду ВСІХ наших водіїв.Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+// Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
+
+// class Car {
+//     constructor(name, engine, owner, price, modelYear) {
+//         this.name = name;
+//         this.engine = engine;
+//         this.owner = owner;
+//         this.price = price;
+//         this.modelYear = modelYear;
+//     }
+    
+// };
+
+// class FixedCar extends Car{
+//     constructor(name, engine, owner, price, modelYear){
+//         super(name, engine, owner, price, modelYear)
+//     }
+//     fixEngine(newValue) {
+//         this.engine +=newValue;
+//     }
+//     newOwner(driver){
+//         this.owner = driver;
+//     }
+// }
+
+
+// let car1 = new FixedCar('Mazda', 230, {name : 'Ihor', age : 26, experience : 4}, 500, 2002);
+// let car2 = new FixedCar('Mazda', 333, {name : 'Dima', age : 55, experience : 30}, 100, 2012);
+// let car3 = new FixedCar('Mazda', 343, {name : 'Oleg', age : 70, experience : 50}, 200, 2000);
+// let car4 = new FixedCar('Mazda', 200, {name : 'Vova', age : 18, experience : 1}, 150, 2007);
+// let car5 = new FixedCar('Mazda', 500, {name : 'Stepan', age : 40, experience : 23}, 600, 1996);
+// let car6 = new Car('Mazda', 700, {name : 'Ostap', age : 27, experience : 3}, 700, 1967);
+// let car7 = new Car('Mazda', 212, {name : 'Viltor', age : 30, experience : 10}, 590, 2010);
+// let car8 = new Car('Mazda', 100, {name : 'Alex', age : 19, experience : 5}, 450, 2009);
+// let car9 = new Car('Mazda', 290, {name : 'Max', age : 28, experience : 2}, 435, 2014);
+// let car10 = new Car('Mazda', 400, {name : 'Ivan', age : 20, experience : 2}, 124, 1990);
+
+// let cars = [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10];
+
+// car1.fixEngine(10);
+// car2.fixEngine(10);
+// car3.fixEngine(10);
+// car4.fixEngine(10);
+// car5.fixEngine(10);
+
+// car1.newOwner({name : 'David', age : 27, experience : 4});
+// car2.newOwner({name: 'John', age: 29, experience: 10 });
+// car3.newOwner({name: 'Jack', age: 34, experience: 40 });
+// car4.newOwner({name: 'Tom', age: 30, experience: 5 });
+// car5.newOwner({name: 'Nicolas', age: 29, experience: 3});
+
+
+// function increaseValue (arr){
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         const item = arr[i];
+//         if (i % 2 !== 0) {
+//             item.engine +=10;
+//             item.price += 5;
+//         }
+//         if (item.owner.experience < 5 && item.owner.age > 25){
+//             console.log(`${item.owner.name} needs to go to driving course `);
+//             item.owner.experience +=1;
+//         }
+//         sum += item.price;        
+//     }       
+
+//      console.log(arr);
+    
+//     return sum;
+
+// };
+// let result = increaseValue(cars);
+// console.log(result);
+
+
+
+
+
+

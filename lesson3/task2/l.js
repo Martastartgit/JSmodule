@@ -54,10 +54,8 @@
 
 // --отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
 // let element = document.getElementsByTagName('a');
-// let x = '';
 // for (const i of element) {
-//     x = i.textContent;
-//     if(x === 'link3') {
+//     if( i.textContent === 'link3') {
 //         i.style.fontSize = '40px';
 //     }
 // }

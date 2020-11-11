@@ -212,10 +212,13 @@
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 
 // let mas1 = ['a', 'b', 'c'];
+// let a = mas1.join('')
+// console.log(a);
 
 // for (let i = 0; i < mas1.length; i++) {
 //     console.log(mas1[i] + mas1[++i] + mas1[++i]);
 
+// }
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
 
@@ -367,7 +370,7 @@
 // let ten = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let mas3 = [];
 // for (let i = 0; i < ten.length; i++) {
-//     mas3[i] = (ten[i]);
+//     mas3[i] = ten[i];
 // }
 // console.log(mas3);
 

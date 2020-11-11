@@ -99,7 +99,7 @@
 
 // - отримати весь список класів елемента з id = rules і вивести їх в console.log
 
-// console.log(rules.classList);
+console.log(rules.classList);
 
 // - отримати всі елементи з класом fc_rules
 
