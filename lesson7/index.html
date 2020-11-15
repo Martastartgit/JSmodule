@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 7</title>
+    <style>
+        #gsd::selection {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form1" >
+        <label for="typeText">First Name :</label>
+        <input type="text" name="typeText"><br>
+        <br>
+        <label for="typeText2">Last Name :</label>
+        <input type="text" name="typeText2">
+    </form>
+    <form action=""id="form2">
+        <p>Select your gender:</p>
+        <input type="radio" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female">
+        <label for="male">Female</label>
+    </form>
+    <br>
+    <button type="button" id="button">Show result!</button>
+    <br>
+    <br>
+    <form action="" id="form3">
+        <label for="rows">Number rows (between 1 and 10):</label>
+        <input type="number" id="row" name="rows" min="1" max="10">
+        <label for="colls"> Number colum (between 1 and 10):</label>
+        <input type="number" id="coll" name="colls" min="1" max="10">
+        <input type="text" name="text">
+    </form>
+    <br>
+    <button type="button" id="btn">Result!</button>
+    <br>
+    <br>
+    <form action="" id="form4">
+        <label for="status">Status false</label>
+        <input type="checkbox" id="status" name="filter" value="false">
+        <label for="age"> Age more than 29</label>
+        <input type="checkbox" id="age" name="filter" value="age">
+        <label for="city">City Kyiv</label>
+        <input type="checkbox" id="city" name="filter" value="city">
+    </form>
+    <br>
+    <button type="button" id="filterBtn">Filter</button>
+    <br>
+    <div id='block'></div>
+    <div id="wrapper">
+        <div id="content"></div>
+        <h1>Правила бойцовского клуба</h1>
+        <!-- <button onclick="myFunction()">Try it</button> -->
+        <p id="demo"></p>
+
+        <div id="wrap">
+           <div class="rules rule1">
+               <h2 id="gsd">Первое правило Бойцовского клуба.</h2>
+               <p>Никому не рассказывать о Бойцовском клубе.</p>
+           </div>
+           <div class="rules rule2">
+               <h2>Второе правило Бойцовского клуба.</h2>
+               <p>Никогда никому не рассказывать о Бойцовском клубе.</p>
+           </div>
+           <div class="rules rule3">
+               <h2>Третье правило Бойцовского клуба.</h2>
+               <p>В схватке участвуют только двое.</p>
+           </div>
+           <div class="rules rule4">
+               <h2>Четвертое правило Бойцовского клуба.</h2>
+               <p>Не более одного поединка за один раз.</p>
+           </div>
+    
+           <div class="rules rule5">
+               <h2>Пятое правило Бойцовского клуба.</h2>
+               <p>Бойцы сражаются без обуви и голые по пояс.</p>
+           </div>
+           <div class="rules rule6">
+               <h2>Шестое правило Бойцовского клуба.</h2>
+               <p>Поединок продолжается столько, сколько потребуется.</p>
+           </div>
+           <div class="rules rule7">
+               <h2>Седьмое правило Бойцовского клуба.</h2>
+               <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок
+                окончен.</p>
+           </div>
+           <div class="rules rule8">
+               <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
+               <p>Новичок обязан принять бой.</p>
+           </div>
+        </div>
+    </div>
+    
+
+
+    
+
+    <script src="l8.js"></script>
+</body>
+</html>
