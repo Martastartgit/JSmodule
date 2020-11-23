@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ua-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson8</title>
+</head>
+<body>
+    <!-- <div id="content"></div>
+    <fieldset>
+        <legend>Text Area</legend>
+        <button id="arrow_left">Arrow left</button>
+        <button id="arrow_right">Arrow right</button>
+        <form action="" id="form1">
+            <textarea name="area" id="area" cols="30" rows="10" style="margin-bottom:10px; display: block;"></textarea>
+            <input type="button" id="clear" value="Clear">
+            <input type="submit" id="save" value="save">
+        </form> 
+    </fieldset> -->
+<!--     
+    <fieldset>  
+        <legend>Анкета :</legend>
+        <form action="" id="form">
+            <label for="name">ПІБ:</label>
+            <input type="text" id="name" name="name" placeholder="ПІБ">
+            <label for="birthday">День Народження:</label>
+            <input type="date" id="birthday" name="birthday">
+            <p>Оберіть стать</p>
+            <div>
+                <label for="male">Чоловіча</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Жіноча</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>           
+            <p>Скількома іноземними мовами ви володієте:</p>
+            <div>
+                <label for="onelang">Однією мовою</label>
+                <input type="checkbox" id="onelang" name="lang" value="onelang"><br>
+                <label for="twolang">Двома мовами</label>
+                <input type="checkbox" id="twolang" name="lang" value="twolang"><br>
+                <label for="more">Більше трьох мов</label>
+                <input type="checkbox" id="more" name="lang" value="more">
+            </div>   
+            <label for="status">Сімейний стан:</label>
+            <select name="status" id="status" style="margin-bottom: 10px;">
+                <option value="married_man">Одружений</option>
+                <option value="notmarried_man">Неодружений</option>
+                <option value="married_woman">Заміжня</option>
+                <option value="notmarried_woman">Незаміжня</option>
+            </select>
+            <label for="skills">Навички:</label>
+            <textarea name="skills" id="skills" cols="30" rows="10" style="margin-bottom: 10px;"></textarea>
+            <div class="button" style="display: flex; justify-content: space-between;">
+                <input type="reset" id="reset" value="Reset" style="width: 49%;">
+                <input type="submit" id="submit" value="Submit" style="width: 49%;"> 
+            </div>
+            
+        </form>
+    </fieldset> -->
+    <fieldset>
+        <legend style="font-weight: 700; font-size: 24px;">Телефона книга</legend>
+        <form action="" id="myForm">
+            <label for="name">ПІБ :</label>
+            <input type="text" id="name" name="name" placeholder="ПІБ" required> <br><br>
+            <label for="phone">Номер :</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380" required><br><br>
+            <label for="email">Пошта :</label>
+            <input type="email" id="email" name="email" multiple><br><br>
+            <label for="firma">Фірма :</label>
+            <input type="text" id='firma' name="firma"><br><br>
+            <label for="department">Відділ :</label>
+            <input type="text" id="department"name="department"><br><br>
+            <label for="birthday">День Народження :</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <h2>Список контактів : </h2>
+        <div id="divka"></div>
+        <button id="button" style="clear:both; float: left; margin-top: 10px">Видалити усі контакти</button>
+
+    </fieldset>
+    
+
+    <script src="l9.js"></script>
+</body>
+</html>
