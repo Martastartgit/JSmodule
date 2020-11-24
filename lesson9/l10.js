@@ -408,26 +408,32 @@
 //     })
 // _______________________________________________________________________________________
 
-// async function asunc() {
-//     const day = await myDay(true);
-//     console.log(day);
-//     const clothes =  await whatToWear(true);
-//     console.log(clothes);
-//     const work = await getToWork(true);
-//     console.log(work);
-//     const late = await lateOrNot(true);
-//     console.log(late);
-//     const word = await guessWord('!ясйюнзіпсеН');
-//     console.log(word);
-//     const happy = await ifBossHappy('happy');
-//     console.log(happy);
-//     const after = await whatDoAfterWork(150);
-//     console.log(after);
-//     const film = await whatFilmToChoose('horror');
-//     console.log(film);
-//     const course = await lesson(true);
-//     console.log(course);
-//     const sleep = await timeToSleep();
-//     console.log(sleep);
-// }
-// asunc()
+async function asunc() {
+        try {
+             const day = await myDay(true);
+             console.log(day);
+             const clothes =  await whatToWear(true);
+             console.log(clothes);
+             const work = await getToWork(true);
+             console.log(work);
+             const late = await lateOrNot(true);
+             console.log(late);
+             const word = await guessWord('!ясйюнзіпсеН');
+             console.log(word);
+             const happy = await ifBossHappy('happy');
+             console.log(happy);
+             const after = await whatDoAfterWork(150);
+             console.log(after);
+             const film = await whatFilmToChoose('horror');
+             console.log(film);
+             const course = await lesson(true);
+             console.log(course);
+             const sleep = await timeToSleep();
+             console.log(sleep);   
+        } catch (e) {
+                console.log(e);
+
+        }
+    
+}
+asunc()
